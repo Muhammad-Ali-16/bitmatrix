@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+    --primary-background: #161617;
+    --secondary-background: #1e1e1e;
+    --primary-color-light: #eee;
+    --text-primary: #eee;
+    --text-light: #adaaaa;
+    --nav-hover: #cb9545;
+    --text-secondary: #cb9545;
+    --bg-tranparent: #0000008a;
+    --bg-transparent-2: #161617;
+    --card-shadow: #cb954575;
+    --input-bg: #1e1e1e;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.max-w-8xl {
+    max-width: 1180px;
+    padding-inline: calc(var(--spacing) * 8);
+    margin: 0 auto;
+}
+
+.main_bg_img {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+}
+
+.nav-scroll {
+    position: fixed;
+    top: -90.5px;
+    left: 0;
+    width: 100%;
+    transform: translateY(90px);
+    transition: .5s all;
+    background: var(--primary-background);
+    z-index: 999;
+}
+
+.page_header_bg {
+    position: relative;
+    background-image: url(./assets/page_hero_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.page_header_bg::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: var(--bg-transparent-2);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.5;
+}
