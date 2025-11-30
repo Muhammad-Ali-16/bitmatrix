@@ -21,13 +21,12 @@ https://bit-matrix.netlify.app/
    ```bash
    npm install
    ```  
-3. Set up your API key in the configuration file or environment variable.  
-4. Run the application:  
+3. Run the application:  
    ```bash
    npm start
    ```  
-5. Open the app in your browser or terminal (depending on your setup) and start chatting with the bot.  
-
+4. Open the app in your browser or terminal (depending on your setup)
+   
 ## Project Files
 - `index.html` — main entry page / layout  
 - Other HTML/CSS/JS files — for various sections (services, portfolio, contact, etc.)  
